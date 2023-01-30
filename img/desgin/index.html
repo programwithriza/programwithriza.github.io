@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>MORIKO COMPLEX</title>
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<section class="header">
+
+   <div class="flex">
+      <a href="#home" class="logo">MORIKO</a>
+      <a href="#reservation" class="btn">Book now</a>
+      <div id="menu-btn" class="fas fa-bars"></div>
+   </div>
+
+   <nav class="navbar">
+      <a href="#home">HOME</a>
+      <a href="#reservation">BOOK NOW</a>
+      <a href="#gallery">GALLERY</a>
+      <a href="#contact">CONTACT</a>
+      <a href="#reviews">REVIEWS</a>
+   </nav>
+
+</section>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+   <div class="swiper home-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="box swiper-slide">
+            <img src="images/WhatsApp Image 2022-11-28 at 20.47.36.jpeg" alt="">  
+           
+         </div>
+
+         <div class="box swiper-slide">
+            <img src="images/WhatsApp Image 2022-11-28 at 20.47.28.jpeg" alt="">
+           
+         </div>
+
+         <div class="box swiper-slide">
+          
+            <img src="images/WhatsApp Image 2022-11-28 at 20.46.14.jpeg" alt="">
+         </div>
+
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+   </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- reservation section starts  -->
+
+<section class="reservation" id="reservation">
+
+   <form name="submit-to-google-sheet" action="" method="post">
+      <h3>Book now </h3>
+      <div class="flex">
+         <div class="box">
+            <p>check in <span>*</span></p>
+            <input type="date" name="check_in" class="input" required>
+         </div>
+         <div class="box">
+            <p>check out <span>*</span></p>
+            <input type="date" name="check_out" class="input" required>
+         </div>
+         <div class="box">
+            <p>adults <span>*</span></p>
+            <select name="adults" class="input" required>
+               <option value="1">1 adult</option>
+               <option value="2">2 adults</option>
+               <option value="3">3 adults</option>
+               <option value="4">4 adults</option>
+2
+            </select>
+         </div>
+         <div class="box">
+            <p>childs <span>*</span></p>
+            <select name="childs" class="input" required>
+               <option value="-">0 child</option>
+               <option value="1">1 child</option>
+               <option value="2">2 childs</option>
+               <option value="3">3 childs</option>
+            
+            </select>
+         </div>
+         <div class="box">
+            <p>rooms <span>*</span></p>
+            <select name="rooms" class="input" required>
+               <option value="1">1 room</option>
+               <option value="2">2 rooms</option>
+               <option value="3">3 rooms</option>
+               <option value="4">4 rooms</option>
+  
+            </select>
+         </div>
+      </div>
+      <input type="submit" value="submit" name="check" class="btn">
+   </form>
+
+</section>
+
+<!-- reservation section ends -->
+
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+   <div class="swiper gallery-slider">
+      <div class="swiper-wrapper">
+         <img src="images/WhatsApp Image 2022-11-28 at 20.46.14.jpeg" class="swiper-slide" alt="">
+         <img src="images/WhatsApp Image 2022-11-28 at 20.47.28.jpeg" class="swiper-slide" alt="">
+         <img src="images/WhatsApp Image 2022-11-28 at 20.47.29.jpeg" class="swiper-slide" alt="">
+         <img src="images/WhatsApp Image 2022-11-28 at 20.47.31.jpeg" class="swiper-slide" alt="">
+         <img src="images/WhatsApp Image 2022-11-28 at 20.47.36.jpeg" class="swiper-slide" alt="">
+         <img src="images/WhatsApp Image 2022-11-28 at 20.47.39.jpeg" class="swiper-slide" alt="">
+      </div>
+      <div class="swiper-pagination"></div>
+   </div>
+
+</section>
+
+<!-- gallery section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+   <div class="row">
+
+      <form name = "" action="" method="post">
+         <h3>send us message</h3>
+         <input type="text" name="name" required maxlength="50" placeholder="enter your name" class="box">
+         <input type="email" name="email" required maxlength="50" placeholder="enter your email" class="box">
+         <input type="number" name="number" required maxlength="10" min="0000000000" max="9999999999" placeholder="enter your number" class="box">
+         <textarea name="msg" class="box" required maxlength="1000" placeholder="enter your message" cols="30" rows="10"></textarea>
+         <input type="submit" value="send message" name="send" class="btn">
+      </form>
+
+      <div class="faq">
+         <h3 class="title">frequently asked questions</h3>
+    
+         <div class="box">
+            <h3>is there any vacancy?</h3>
+            <p>Currently One Room is Vacancy!</p>
+         </div>
+         <div class="box">
+            <h3>what are payment methods?</h3>
+            <p>UPI,Credit Card,Debit Card,Cash</p>
+         </div>
+         <div class="box">
+            <h3>How many kilometers from kottakkal?</h3>
+            <p>Only 1 kilometer from kottakkal</p>
+         </div>
+         <div class="box">
+            <h3>Do we need any ID proof for the project ?</h3>
+            <p>Need Photo ID proof at the time of checking </p>
+         </div>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- reviews section starts  -->
+
+<section class="reviews" id="reviews">
+
+   <div class="swiper reviews-slider">
+
+      <div class="swiper-wrapper">
+         <div class="swiper-slide box">
+            <img src="images/pic-1.png" alt="">
+            <h3>Sahal</h3>
+            <p>Wonderful stay I had here. Very calm and quite place surrounded with decent colony people. </p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="images/pic-3.png" alt="">
+            <h3>Jalil</h3>
+            <p>The place is in a very nice neighbourhood and the host went out of his way to help us whenever we required anything.</p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="images/pic-5.png" alt="">
+            <h3>Ruzain</h3>
+            <p> Rooms were good maintained..</p>
+         </div>
+        
+      <div class="swiper-pagination"></div>
+   </div>
+
+</section>
+
+<!-- reviews section ends  -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <a href="tel:1234567890"><i class="fas fa-phone"></i> +91 9447291223</a>
+         <a href="tel:1112223333"><i class="fas fa-phone"></i> +91 9895172771</a>
+         <a href="mailto:shakhanas@gmail.com"><i class="fas fa-envelope"></i> morikogroup@gmail.com</a>
+         <a href="#"><i class="fas fa-map-marker-alt"></i> kerala, india - 65607</a>
+      </div>
+
+      <div class="box">
+         <a href="#home">HOME</a>
+         <a href="#reservation">BOOK NOW</a>
+         <a href="#gallery">GALLERY</a>
+         <a href="#contact">CONTACT</a>
+         <a href="#reviews">REVIEWS</a>
+      </div>
+
+      <div class="box">
+         <a href="#">facebook <i class="fab fa-facebook-f"></i></a>
+         <a href="#">twitter <i class="fab fa-twitter"></i></a>
+         <a href="#">instagram <i class="fab fa-instagram"></i></a>
+         <a href="#">linkedin <i class="fab fa-linkedin"></i></a>
+      </div>
+
+   </div>
+
+   <div class="credit">&copy; copyright @ 2022 by RIZA MOHAMED | all rights reseved!</div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" ></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+<form name="submit-to-google-sheet">
+   <input name="email" type="email" placeholder="Email" required>
+   <button type="submit">Send</button>
+ </form>
+ 
+ <script>
+   const scriptURL = '<https://script.google.com/macros/s/AKfycbyg9Tx3WEExY7av94YPZpcCmMt36N9Vcnq0lGc02xySPpo4G21VlDtPCB3x_IgqQPQRyg/exec>'
+   const form = document.forms['submit-to-google-sheet']
+ 
+   form.addEventListener('submit', e => {
+     e.preventDefault()
+     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+       .then(response => console.log('Success!', response))
+       .catch(error => console.error('Error!', error.message))
+   })
+ </script>
+
+</body>
+</html>
